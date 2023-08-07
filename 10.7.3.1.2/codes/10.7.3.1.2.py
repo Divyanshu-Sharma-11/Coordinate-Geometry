@@ -41,7 +41,7 @@ plt.plot(x_CA[0,:],x_CA[1,:],label='$CA$')
 #Labeling the coordinates
 tri_coords = np.vstack((A,B,C)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['A','B','c']
+vert_labels = ['A','B','C']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
@@ -54,7 +54,7 @@ plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
-plt.title('Area of Triangle ABCD',size=12) 
+plt.title('Area of Triangle ABC',size=12) 
 
 
 plt.show()
